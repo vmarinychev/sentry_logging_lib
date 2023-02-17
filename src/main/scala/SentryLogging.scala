@@ -12,7 +12,7 @@ case class SentryLogger(
   dns: String,
   frequency: Long = 1L
 ) {
-  private val logger = LoggerFactory.getLogger(classOf[SentryLoggingLib])
+  private val logger = LoggerFactory.getLogger(classOf[SentryLogger])
 
   Sentry.init(dns)
 

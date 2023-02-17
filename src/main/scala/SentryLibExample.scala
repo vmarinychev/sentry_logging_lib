@@ -6,9 +6,11 @@ object SentryLibExample extends App {
 
 
  s.error("Error message")
- s.debug("Error message")
- s.warning("Error message")
- s.info("Error message")
+ s.debug("debug message")
+ s.warning("warning message")
+ s.info("info message")
+
+ s.sentryError("Error message")
 
  val optionInt: Option[Int] = None
  print(optionInt.get + 1)
